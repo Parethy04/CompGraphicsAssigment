@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
 
+    private Transform CamTransform;
     Rigidbody rb;
 
     void Start()
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         InputManager.Init(this);
         InputManager.EnableInGame();
+        CamTransform = Camera.main.transform;
     }
 
     void Update()
@@ -26,6 +28,8 @@ public class Player : MonoBehaviour
     {
         //smoothed movement
         smoothedMoveDir = Vector3.SmoothDamp(smoothedMoveDir, moveDir, ref smoothedMoveVelo, 0.1f);
+        smoothedMoveDir = CamTransform.forward * moveDir.z + CamTransform.right * moveDir.x;
+        smoothedMoveDir.y = 0;
         rb.velocity = smoothedMoveDir * moveSpeed;
     }
 
