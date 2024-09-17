@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
     {
         _IsActive = false;
         _Agent.SetDestination(new Vector3(Random.Range(-219, 85), Random.Range(0, 0), Random.Range(-53, 150)));
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         _IsActive = true;
         Debug.Log("new location");
     }

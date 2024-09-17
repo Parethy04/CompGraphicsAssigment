@@ -6,7 +6,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private static Controls controls;
-
+    
     //Activates player controls;
     public static void Init(Player player)
     {

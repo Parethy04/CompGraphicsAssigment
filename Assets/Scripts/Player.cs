@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
         InputManager.Init(this);
         InputManager.EnableInGame();
         CamTransform = Camera.main.transform;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
