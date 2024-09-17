@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
-
+    [SerializeField]  float spintTime;
     private Transform CamTransform;
     Rigidbody rb;
 
@@ -38,5 +38,17 @@ public class Player : MonoBehaviour
     public void SetMoveDirection(Vector3 newDir)
     {
         moveDir = newDir;
+    }
+
+    public void checkSprint()
+    {
+        if (spintTime <= 0)
+        {
+            rb.velocity = smoothedMoveDir * (0.5f * moveSpeed);
+        }
+        else
+        {
+            return;
+        }
     }
 }

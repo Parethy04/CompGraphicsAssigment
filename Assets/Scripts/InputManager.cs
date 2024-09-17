@@ -16,6 +16,10 @@ public class InputManager : MonoBehaviour
         {
             player.SetMoveDirection(_.ReadValue<Vector3>());
         };
+        controls.InGame.Sprint.performed += _ =>
+        {
+            player.checkSprint();
+        };
     }
     public static void InitCam() 
     { 
