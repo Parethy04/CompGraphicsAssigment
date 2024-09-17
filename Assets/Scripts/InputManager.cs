@@ -16,10 +16,14 @@ public class InputManager : MonoBehaviour
         {
             player.SetMoveDirection(_.ReadValue<Vector3>());
         };
-       
-      
-
-
+    }
+    public static void InitCam() 
+    { 
+        controls = new Controls();
+         controls.InGame.Mouse.performed += _ =>
+        {
+            print(_.ReadValue<Vector2>());
+        };
     }
     public static void EnableInGame()
     {
