@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
         smoothedMoveDir = CamTransform.forward * moveDir.z + CamTransform.right * moveDir.x;
           
         
-        rb.velocity = new Vector3 (smoothedMoveDir.x * moveSpeed,-5, smoothedMoveDir.z * moveSpeed);
+        rb.velocity = new Vector3 (smoothedMoveDir.x * moveSpeed,-3, smoothedMoveDir.z * moveSpeed);
 
     }
 
