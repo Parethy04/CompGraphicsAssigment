@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     [SerializeField]  float sprintTime;
     private Transform CamTransform;
     Rigidbody rb;
-    private float coolDown;
     private bool onCoolDown;
 
 
@@ -36,10 +35,10 @@ public class Player : MonoBehaviour
             }
             else if (sprintTime <= 0)
             {
+                StartCoroutine(Cooldown(2));
                 isSprinting = false;
                 rb.velocity = Vector3.zero; 
                 sprintTime = 0;
-                StartCoroutine(Cooldown(2));
             }
         }
      
@@ -49,10 +48,7 @@ public class Player : MonoBehaviour
         {
             if (sprintTime <= 2 || sprintTime <= 5)
             {
-                if (onCoolDown)
-                {
-                    StartCoroutine(Cooldown(10));
-                }
+
 
                 if (!onCoolDown)
                 {
@@ -93,21 +89,15 @@ public class Player : MonoBehaviour
         
     }
 
-    private IEnumerator Cooldown(float maxCoolDown)
+    public IEnumerator Cooldown(float maxCoolDown)
     {
-        if (onCoolDown)
-        {
-            coolDown -= Time.deltaTime;
-            coolDown = maxCoolDown;
-            onCoolDown = false;
-            yield return new WaitUntil(() => coolDown <= 0 );
-            onCoolDown = true;
-            yield break;
-        }
+        onCoolDown = true;
+        yield return new WaitForSeconds(maxCoolDown);
+        onCoolDown = false;
+    }
 
-        if (onCoolDown) yield break;
 
 
     }
     
-}
+
