@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]private float Timer;
     [SerializeField] TextMeshProUGUI TimerDisplay;
+    [SerializeField] Enemy monsterAI;
     
     void Start()
     {
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
         {
             Timer = 0;
             TimerDisplay.text = "IT KNOW YOUR LOCATION!";
-
+            monsterAI._IsHunting = true;
         }
     }
 }

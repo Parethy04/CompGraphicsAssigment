@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform player;
     NavMeshAgent _Agent;
     bool _IsActive = true;
+    public bool _IsHunting = false;
 
     bool Spotted;
     // Start is called before the first frame update
@@ -36,6 +37,10 @@ public class Enemy : MonoBehaviour
         {
             StartCoroutine(DesLocation());
             _IsActive = false;
+        }
+        else if (_IsHunting)
+        {
+            _Agent.SetDestination(player.position);
         }
     }
     private void OnTriggerStay(Collider other)

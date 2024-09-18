@@ -4548,6 +4548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer: 0
   TimerDisplay: {fileID: 978829331}
+  monsterAI: {fileID: 1440461971}
 --- !u!4 &742274568
 Transform:
   m_ObjectHideFlags: 0
@@ -8610,6 +8611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Target: {fileID: 1535558386}
   player: {fileID: 1535558386}
+  _IsHunting: 0
 --- !u!1 &1452579200
 GameObject:
   m_ObjectHideFlags: 0
