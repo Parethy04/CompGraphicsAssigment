@@ -71,9 +71,10 @@ public class Player : MonoBehaviour
         //smoothed movement
         smoothedMoveDir = Vector3.SmoothDamp(smoothedMoveDir, moveDir, ref smoothedMoveVelo, 0.1f);
         smoothedMoveDir = CamTransform.forward * moveDir.z + CamTransform.right * moveDir.x;
-        smoothedMoveDir.y = 0;  
+          
         
-        rb.velocity = smoothedMoveDir * moveSpeed;
+        rb.velocity = new Vector3 (smoothedMoveDir.x * moveSpeed,-5, smoothedMoveDir.z * moveSpeed);
+
     }
 
     //this handles movement 
