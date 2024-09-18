@@ -18,7 +18,11 @@ public class InputManager : MonoBehaviour
         };
         controls.InGame.Sprint.performed += _ =>
         {
-            player.checkSprint();
+            player.startSprint();
+        };
+        controls.InGame.Sprint.canceled += _ =>
+        {
+            player.cancelSprint();   
         };
     }
     public static void InitCam() 

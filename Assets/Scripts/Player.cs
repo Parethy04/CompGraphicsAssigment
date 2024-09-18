@@ -1,16 +1,20 @@
 using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private bool isSprinting; 
     [SerializeField] float moveSpeed;
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
-    [SerializeField]  float spintTime;
+    [SerializeField]  float sprintTime;
     private Transform CamTransform;
     Rigidbody rb;
+    private float coolDown;
+    private bool onCoolDown;
+
 
     void Start()
     {
@@ -23,6 +27,44 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (isSprinting )
+        {
+            sprintTime -= Time.deltaTime;
+            if (sprintTime >= 0)
+            {
+                rb.velocity = smoothedMoveDir * (moveSpeed * 1.5f);
+            }
+            else if (sprintTime <= 0)
+            {
+                isSprinting = false;
+                rb.velocity = Vector3.zero; 
+                sprintTime = 0;
+                StartCoroutine(Cooldown(2));
+            }
+        }
+     
+
+
+          if (!isSprinting ||  sprintTime <= 0 )
+        {
+            if (sprintTime <= 2 || sprintTime <= 5)
+            {
+                if (onCoolDown)
+                {
+                    StartCoroutine(Cooldown(10));
+                }
+
+                if (!onCoolDown)
+                {
+                    sprintTime += Time.deltaTime;
+                }
+                
+            }
+
+
+               
+            
+        } 
         
     }
     private void FixedUpdate()
@@ -40,15 +82,32 @@ public class Player : MonoBehaviour
         moveDir = newDir;
     }
 
-    public void checkSprint()
+    public void startSprint()
     {
-        if (spintTime <= 0)
-        {
-            rb.velocity = smoothedMoveDir * (0.5f * moveSpeed);
-        }
-        else
-        {
-            return;
-        }
+        isSprinting = true;
     }
+
+    public void cancelSprint()
+    {
+        isSprinting = false;
+        
+    }
+
+    private IEnumerator Cooldown(float maxCoolDown)
+    {
+        if (onCoolDown)
+        {
+            coolDown -= Time.deltaTime;
+            coolDown = maxCoolDown;
+            onCoolDown = false;
+            yield return new WaitUntil(() => coolDown <= 0 );
+            onCoolDown = true;
+            yield break;
+        }
+
+        if (onCoolDown) yield break;
+
+
+    }
+    
 }

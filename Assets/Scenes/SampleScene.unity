@@ -1913,7 +1913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  spintTime: 0
+  sprintTime: 5
 --- !u!54 &1535558388
 Rigidbody:
   m_ObjectHideFlags: 0
