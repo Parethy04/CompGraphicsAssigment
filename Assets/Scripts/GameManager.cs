@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private float Timer;
+    [SerializeField]private float Timer;
     [SerializeField] TextMeshProUGUI TimerDisplay;
     
     void Start()
     {
-        Timer = 120;
+        Timer = 240;
     }
 
 
