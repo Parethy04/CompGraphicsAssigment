@@ -4546,6 +4546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7176baf43cc7d4041bcdbd394e998597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 0
   TimerDisplay: {fileID: 978829331}
 --- !u!4 &742274568
 Transform:
@@ -5815,10 +5816,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -5882,8 +5883,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 173.98816, y: -32.34201}
+  m_SizeDelta: {x: 347.977, y: 64.685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1001638496 stripped
 GameObject:
