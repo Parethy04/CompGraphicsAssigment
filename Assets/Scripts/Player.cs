@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //Sprinting
     private bool isSprinting; 
+    [SerializeField]  float sprintTime;
+    private bool onCoolDown;
+    [SerializeField] private float maxSprintTime;
+    //Camera location
+    private Transform CamTransform;
+
+    //standard movement
     [SerializeField] float moveSpeed;
+    Rigidbody rb;
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
-    [SerializeField]  float sprintTime;
-    private Transform CamTransform;
-    Rigidbody rb;
-    private bool onCoolDown;
-
-
+    
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -46,10 +51,8 @@ public class Player : MonoBehaviour
 
           if (!isSprinting ||  sprintTime <= 0 )
         {
-            if (sprintTime <= 2 || sprintTime <= 5)
+            if (sprintTime <= 2 || sprintTime <= maxSprintTime)
             {
-
-
                 if (!onCoolDown)
                 {
                     sprintTime += Time.deltaTime;
