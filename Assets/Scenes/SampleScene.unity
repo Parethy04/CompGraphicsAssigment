@@ -13262,6 +13262,10 @@ MonoBehaviour:
   - {fileID: 1675802351}
   - {fileID: 452317990}
   - {fileID: 1446296291}
+  Board1: {fileID: 1008707545}
+  Board2: {fileID: 335002185}
+  Board3: {fileID: 642630921}
+  Board4: {fileID: 768604752}
 --- !u!1 &1763398237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,

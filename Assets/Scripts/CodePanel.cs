@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,7 +15,14 @@ public class CodePanel : MonoBehaviour
     private int output1, output2, output3, output4;
     [SerializeField]GameObject[] CodePanels;
     [SerializeField]private List<TMP_InputField> inputs;
-    private bool digit1Correct, digit2Correct, digit3Correct, digit4Correct;    
+    private bool digit1Correct, digit2Correct, digit3Correct, digit4Correct;
+
+
+    [SerializeField] TMP_Text Board1;
+    [SerializeField] TMP_Text Board2;
+        
+    [SerializeField] TMP_Text Board3;
+    [SerializeField] TMP_Text Board4;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -45,12 +53,15 @@ public class CodePanel : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-       
-     
-        
 
-      
-        
+
+        Board1.text = comboNumstemp[0].ToString();
+        Board2.text = comboNumstemp[1].ToString();
+        Board3.text = comboNumstemp[2].ToString();
+        Board4.text = comboNumstemp[3].ToString();
+
+
+
     }
     
 
@@ -117,6 +128,7 @@ public class CodePanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
         {
             exitBarrier.SetActive(false);
@@ -126,5 +138,7 @@ public class CodePanel : MonoBehaviour
         {
             return;
         }
+        
+
     }
 }
