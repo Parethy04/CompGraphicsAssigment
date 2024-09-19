@@ -10,9 +10,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]private float Timer;
     [SerializeField] TextMeshProUGUI TimerDisplay;
     [SerializeField] Enemy monsterAI;
-    List<int> comboNums ;
+    public List<int> comboNums { get; private set; } 
+    CodePanel codePanel;
     void Start()
     {
+        codePanel = FindObjectOfType<CodePanel>();
         List<int> comboNums = new List<int>();
         for (int i = 0; i < 4; i++) 
         {
@@ -21,7 +23,11 @@ public class GameManager : MonoBehaviour
         //just console printing
         foreach(int values in comboNums)
         {
-            Console.WriteLine(values);
+            print(values);
+        }
+        foreach (var item in comboNums)
+        {
+            codePanel.comboNumstemp.Add(item);
         }
         Timer = 240;
     }
