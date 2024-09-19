@@ -10049,40 +10049,13 @@ GameObject:
   - component: {fileID: 1394156831}
   - component: {fileID: 1394156830}
   - component: {fileID: 1394156829}
-  - component: {fileID: 1394156828}
   m_Layer: 0
   m_Name: ExitArea
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1394156828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394156827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a215cbefc23e6f148b5844581c3da32b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  comboNumstemp: 
-  CodePanels:
-  - {fileID: 1042511524}
-  - {fileID: 820786026}
-  - {fileID: 1088009166}
-  - {fileID: 1675802349}
-  - {fileID: 452317988}
-  - {fileID: 1446296289}
-  - {fileID: 922362086}
-  inputs:
-  - {fileID: 1088009168}
-  - {fileID: 1675802351}
-  - {fileID: 452317990}
-  - {fileID: 1446296291}
 --- !u!65 &1394156829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13274,6 +13247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a215cbefc23e6f148b5844581c3da32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitBarrier: {fileID: 1743998954}
   comboNumstemp: 
   CodePanels:
   - {fileID: 1042511524}

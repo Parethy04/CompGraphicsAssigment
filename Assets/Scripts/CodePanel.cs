@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class CodePanel : MonoBehaviour
 {
-    GameManager gameManager;    
+    GameManager gameManager;
+    [SerializeField] private GameObject exitBarrier;
     public List<int> comboNumstemp;
     private List<int> Digits;
     private string input;
@@ -45,7 +46,7 @@ public class CodePanel : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
        
-        comboNumstemp = new List<int>();
+     
         
 
       
@@ -118,7 +119,7 @@ public class CodePanel : MonoBehaviour
     {
         if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
         {
-            print("Correct");
+            exitBarrier.SetActive(false);
         }
        
         else

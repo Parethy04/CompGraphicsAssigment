@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -101,8 +103,15 @@ public class Player : MonoBehaviour
         onCoolDown = false;
     }
 
-
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
+
+  
+}
     
 

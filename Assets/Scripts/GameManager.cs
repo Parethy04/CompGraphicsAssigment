@@ -12,8 +12,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] Enemy monsterAI;
     public List<int> comboNums { get; private set; } 
     CodePanel codePanel;
+    Player player;  
     void Start()
     {
+        player = FindObjectOfType<Player>();
         codePanel = FindObjectOfType<CodePanel>();
         List<int> comboNums = new List<int>();
         for (int i = 0; i < 4; i++) 
@@ -46,5 +48,8 @@ public class GameManager : MonoBehaviour
             TimerDisplay.text = "IT KNOWS YOUR LOCATION!";
             monsterAI._IsHunting = true;
         }
+        
     }
+
+    
 }
