@@ -10,9 +10,19 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene(2);
     }
     
     

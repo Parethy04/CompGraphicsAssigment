@@ -132,6 +132,10 @@ public class CodePanel : MonoBehaviour
         if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
         {
             exitBarrier.SetActive(false);
+            foreach (var item in CodePanels)
+            {
+                item.SetActive(false);
+            }
         }
        
         else
