@@ -8,7 +8,7 @@ public class Buttons : MonoBehaviour
    
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Quit()
@@ -22,7 +22,7 @@ public class Buttons : MonoBehaviour
 
     public void ToMainMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MainMenu");
     }
     
     

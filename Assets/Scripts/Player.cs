@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
         if(other.CompareTag("Exit"))
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("WinArea");
         }
     }
 
