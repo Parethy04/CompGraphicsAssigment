@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     NavMeshAgent _Agent;
     bool _IsActive = true;
     public bool _IsHunting = false;
+   
 
     bool Spotted;
     // Start is called before the first frame update
@@ -32,7 +33,9 @@ public class Enemy : MonoBehaviour
     {
         if (Spotted)
         {
-            soundSource.Play();
+            
+            
+            
             _Agent.destination = player.position;
         }
         else if (_IsActive)
@@ -42,7 +45,7 @@ public class Enemy : MonoBehaviour
         }
         else if (_IsHunting)
         {
-            _Agent.SetDestination(player.position);
+            _Agent.destination = player.position;
         }
         else if (player.GetComponent<Player>().dead == true)
         {
@@ -62,6 +65,13 @@ public class Enemy : MonoBehaviour
         if (other.tag == "Player" && Spotted)
         {
             StartCoroutine(countdown());
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            soundSource.Play();
         }
     }
     IEnumerator countdown()
