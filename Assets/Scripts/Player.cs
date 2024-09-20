@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
-
+    [SerializeField] AudioSource sound;
     [SerializeField] CinemachineVirtualCamera cam;
     public bool dead;
     [SerializeField] GameObject enemylookat;
@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
     public IEnumerator LookatDeath()
     {
         cam.Priority = 0;
-        
+        sound.Play();
         yield return new WaitForSeconds (3);
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenu");

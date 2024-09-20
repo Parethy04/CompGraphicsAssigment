@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] Transform _Target;
     [SerializeField] Transform player;
+    [SerializeField] AudioSource soundSource;
     NavMeshAgent _Agent;
     bool _IsActive = true;
     public bool _IsHunting = false;
@@ -31,7 +32,8 @@ public class Enemy : MonoBehaviour
     {
         if (Spotted)
         {
-            _Agent.SetDestination(player.position);
+            soundSource.Play();
+            _Agent.destination = player.position;
         }
         else if (_IsActive)
         {
