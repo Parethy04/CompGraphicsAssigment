@@ -11145,7 +11145,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -12035,6 +12035,7 @@ MonoBehaviour:
   maxSprintTime: 5
   moveSpeed: 10
   cam: {fileID: 1917763031}
+  dead: 0
   enemylookat: {fileID: 100175159}
 --- !u!54 &1535558388
 Rigidbody:
