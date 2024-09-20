@@ -42,6 +42,10 @@ public class Enemy : MonoBehaviour
         {
             _Agent.SetDestination(player.position);
         }
+        else if (player.GetComponent<Player>().dead == true)
+        {
+            _Agent.SetDestination(gameObject.transform.position);
+        }
     }
     private void OnTriggerStay(Collider other)
     {

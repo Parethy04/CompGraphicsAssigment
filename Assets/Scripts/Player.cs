@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using Unity.VisualScripting;
@@ -20,8 +21,10 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
-    
-    
+
+    [SerializeField] CinemachineVirtualCamera cam;
+    public bool dead;
+    [SerializeField] GameObject enemylookat;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -70,19 +73,27 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //smoothed movement
-        smoothedMoveDir = Vector3.SmoothDamp(smoothedMoveDir, moveDir, ref smoothedMoveVelo, 0.1f);
-        smoothedMoveDir = CamTransform.forward * moveDir.z + CamTransform.right * moveDir.x;
-          
+        if (!dead)
+        {
+            //smoothed movement
+            smoothedMoveDir = Vector3.SmoothDamp(smoothedMoveDir, moveDir, ref smoothedMoveVelo, 0.1f);
+            smoothedMoveDir = CamTransform.forward * moveDir.z + CamTransform.right * moveDir.x;
+
+
+            rb.velocity = new Vector3(smoothedMoveDir.x * moveSpeed, -3, smoothedMoveDir.z * moveSpeed);
+        }
         
-        rb.velocity = new Vector3 (smoothedMoveDir.x * moveSpeed,-3, smoothedMoveDir.z * moveSpeed);
 
     }
 
     //this handles movement 
     public void SetMoveDirection(Vector3 newDir)
     {
-        moveDir = newDir;
+        if (!dead)
+        {
+            moveDir = newDir;
+        }
+        
     }
 
     public void startSprint()
@@ -111,8 +122,24 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("WinArea");
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            dead = true;
+            StartCoroutine(LookatDeath());
+        }
+    }
+    public IEnumerator LookatDeath()
+    {
+        cam.Priority = 0;
+        
+        yield return new WaitForSeconds (3);
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("MainMenu");
+    }
 
-  
+
 }
     
 
