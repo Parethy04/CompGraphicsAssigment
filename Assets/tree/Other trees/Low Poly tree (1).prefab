@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8883880067240022197}
   - component: {fileID: 6678018646718227583}
   - component: {fileID: 4758735619937158969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Low Poly tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,6 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: bbea1a52f7eab054fabf70df5074091a, type: 2}
+  - {fileID: 2100000, guid: 745d818b01eb6e3478702980129d09d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

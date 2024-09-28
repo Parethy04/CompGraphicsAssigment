@@ -83,7 +83,12 @@ public class Enemy : MonoBehaviour
     IEnumerator DesLocation()
     {
         _IsActive = false;
-        _Agent.SetDestination(new Vector3(Random.Range(-219, 85), Random.Range(0, 0), Random.Range(-53, 150)));
+        NavMeshHit hit;
+        
+        Vector3 BasicDestination = new Vector3(Random.Range(-219, 85),0, Random.Range(-53, 150));
+        NavMesh.SamplePosition(BasicDestination, out hit,40 , NavMesh.AllAreas);
+        Vector3 Endpoint = hit.position;
+        _Agent.SetDestination(Endpoint);
         Debug.Log(_Agent.destination);
         yield return new WaitForSeconds(8);
         _IsActive = true;
