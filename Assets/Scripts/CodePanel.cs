@@ -7,8 +7,9 @@ using UnityEngine;
 
 public class CodePanel : MonoBehaviour
 {
-    GameManager gameManager;
+    
     [SerializeField] private GameObject exitBarrier;
+    //Variables for checking if player inputted correct answer 
     public List<int> comboNumstemp;
     private List<int> Digits;
     private string input;
@@ -17,14 +18,23 @@ public class CodePanel : MonoBehaviour
     [SerializeField]private List<TMP_InputField> inputs;
     private bool digit1Correct, digit2Correct, digit3Correct, digit4Correct;
 
-
+    // Text for board
     [SerializeField] TMP_Text Board1;
     [SerializeField] TMP_Text Board2;
-        
     [SerializeField] TMP_Text Board3;
     [SerializeField] TMP_Text Board4;
+    void Start()
+    {
+        
+        //Placing generated numbers on signs 
+        Board1.text = comboNumstemp[0].ToString();
+        Board2.text = comboNumstemp[1].ToString();
+        Board3.text = comboNumstemp[2].ToString();
+        Board4.text = comboNumstemp[3].ToString();
+    }
     private void OnTriggerEnter(Collider other)
     {
+        //Opening code panel UI
         if (other.CompareTag("Player"))
         {
             foreach (var item in CodePanels)
@@ -37,6 +47,7 @@ public class CodePanel : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        //Closing code panel UI
         if (other.CompareTag("Player"))
         {
             foreach (var item in CodePanels)
@@ -50,20 +61,11 @@ public class CodePanel : MonoBehaviour
 
     
 
-    void Start()
-    {
-        gameManager = FindObjectOfType<GameManager>();
-
-
-        Board1.text = comboNumstemp[0].ToString();
-        Board2.text = comboNumstemp[1].ToString();
-        Board3.text = comboNumstemp[2].ToString();
-        Board4.text = comboNumstemp[3].ToString();
-
-
-
-    }
+  
     
+/// <summary>
+///  Checking each number to see if they are correct
+/// </summary>
 
     public void modNumber1(string input1)
     {
@@ -128,7 +130,7 @@ public class CodePanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Opening exit door if correct input is given 
         if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
         {
             exitBarrier.SetActive(false);
