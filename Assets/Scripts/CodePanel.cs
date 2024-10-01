@@ -13,10 +13,12 @@ public class CodePanel : MonoBehaviour
     public List<int> comboNumstemp;
     private List<int> Digits;
     private string input;
+    private bool inArea; 
     private int output1, output2, output3, output4;
     [SerializeField]GameObject[] CodePanels;
     [SerializeField]private List<TMP_InputField> inputs;
     private bool digit1Correct, digit2Correct, digit3Correct, digit4Correct;
+    private bool isClicked;
 
     // Text for board
     [SerializeField] TMP_Text Board1;
@@ -32,15 +34,12 @@ public class CodePanel : MonoBehaviour
         Board3.text = comboNumstemp[2].ToString();
         Board4.text = comboNumstemp[3].ToString();
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         //Opening code panel UI
         if (other.CompareTag("Player"))
         {
-            foreach (var item in CodePanels)
-            {
-                item.SetActive(true);
-            }
+            inArea = true;
             Cursor.lockState = CursorLockMode.Confined;
         }
         
@@ -50,10 +49,8 @@ public class CodePanel : MonoBehaviour
         //Closing code panel UI
         if (other.CompareTag("Player"))
         {
-            foreach (var item in CodePanels)
-            {
-                item.SetActive(false);
-            }
+            inArea = false;
+            OpenCloseCodePanel();
             Cursor.lockState = CursorLockMode.Locked;
         }
         
@@ -147,4 +144,35 @@ public class CodePanel : MonoBehaviour
         
 
     }
+
+    public void OpenCloseCodePanel()
+    {
+        if (!isClicked)
+        {
+            isClicked = true;
+            print(true);
+            if (inArea && isClicked)
+            {
+                foreach (var item in CodePanels)
+                {
+                    item.SetActive(true);
+                }
+                isClicked = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                return;
+            }
+            if (!inArea || isClicked)
+            {
+                foreach (var item in CodePanels)
+                {
+                    item.SetActive(false);
+                }
+
+                isClicked = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+      
+        }
+    }
+
 }

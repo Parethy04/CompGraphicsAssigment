@@ -15,8 +15,8 @@ TagManager:
   - OutlineLayer
   - Water
   - UI
-  - 
-  - 
+  - WorldSpace
+  - Player
   - 
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: WorldSpace
+    uniqueID: 3573302811
     locked: 0

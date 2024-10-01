@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -22,21 +23,45 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
     [SerializeField] AudioSource sound;
-    [SerializeField] CinemachineVirtualCamera cam;
+    [SerializeField] CinemachineVirtualCamera cineCam;
+    Camera playerCam;
     public bool dead;
     [SerializeField] GameObject enemylookat;
+    private Vector3 mousePos;
+    RaycastHit hit;
+  
     void Start()
     {
+
+        playerCam = gameObject.GetComponentInChildren<Camera>();
         rb = GetComponent<Rigidbody>();
         InputManager.Init(this);
         InputManager.EnableInGame();
         CamTransform = Camera.main.transform;
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     void Update()
     {
-        if (isSprinting )
+        Input.GetMouseButtonDown(0);
+        {
+            Mouse mouse = Mouse.current;
+            if (mouse.leftButton.wasPressedThisFrame)
+            {
+                Vector3 mousePosition = mouse.position.ReadValue();
+                Ray ray = playerCam.ScreenPointToRay(mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit hit))
+                {
+                    print(hit.collider.name);
+                }
+                // mousePos = playerCam.ScreenToWorldPoint(InputManager.GetMousePos());
+
+            }
+        }
+    
+
+    if (isSprinting )
         {
             sprintTime -= Time.deltaTime;
             if (sprintTime >= 0)
@@ -132,7 +157,7 @@ public class Player : MonoBehaviour
     }
     public IEnumerator LookatDeath()
     {
-        cam.Priority = 0;
+        cineCam.Priority = 0;
         sound.Play();
         yield return new WaitForSeconds (3);
         Cursor.lockState = CursorLockMode.None;

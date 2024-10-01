@@ -6,7 +6,13 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private static Controls controls;
-    
+    private static Vector3 mousePos;
+
+    public static Vector3 GetMousePos()
+    {
+        return mousePos;
+    }
+
     //Activates player controls;
     public static void Init(Player player)
     {
@@ -24,15 +30,11 @@ public class InputManager : MonoBehaviour
         {
             player.cancelSprint();   
         };
+
+ 
+
     }
-    public static void InitCam() 
-    { 
-        controls = new Controls();
-         controls.InGame.Mouse.performed += _ =>
-        {
-            print(_.ReadValue<Vector2>());
-        };
-    }
+   
     public static void EnableInGame()
     {
         controls.InGame.Enable();
