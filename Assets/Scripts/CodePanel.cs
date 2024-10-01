@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CodePanel : MonoBehaviour
 {
@@ -14,8 +15,9 @@ public class CodePanel : MonoBehaviour
     private List<int> Digits;
     private string input;
     private bool inArea; 
-    private int output1, output2, output3, output4;
+    private int output1, output2 , output3, output4;
     [SerializeField]GameObject[] CodePanels;
+    [SerializeField] private Image map;
     [SerializeField]private List<TMP_InputField> inputs;
     private bool digit1Correct, digit2Correct, digit3Correct, digit4Correct;
     private bool isClicked;
@@ -50,7 +52,7 @@ public class CodePanel : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inArea = false;
-            OpenCloseCodePanel();
+            CloseCodePanel();
             Cursor.lockState = CursorLockMode.Locked;
         }
         
@@ -157,22 +159,160 @@ public class CodePanel : MonoBehaviour
                 {
                     item.SetActive(true);
                 }
-                isClicked = false;
+
+                map.enabled = false;
                 Cursor.lockState = CursorLockMode.Confined;
                 return;
             }
-            if (!inArea || isClicked)
+            if (!inArea)
             {
                 foreach (var item in CodePanels)
                 {
                     item.SetActive(false);
                 }
-
+                map.enabled = true;
+                
                 isClicked = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
       
         }
     }
+
+    public void CloseCodePanel()
+    {
+        if (inArea && isClicked || !inArea)
+        {
+            isClicked = false;
+            map.enabled = true;
+            foreach (var item in CodePanels)
+            {
+                item.SetActive(false);
+            }
+        }
+        
+    }
+
+    public void Input0()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "0";
+                return;
+            }
+        }
+    }
+    public void Input1()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "1";
+                return;
+            }
+        }
+    }
+    public void Input2()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "2";
+                return;
+            }
+        }
+    }
+    public void Input3()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "3";
+                return;
+            }
+        }
+    }
+    public void Input4()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "4";
+                return;
+            }
+        }
+    }
+     public void Input5()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "5";
+                return;
+            }
+        }
+        
+    }
+    public void Input6()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "6";
+                return;
+            }
+        }
+        
+    }
+    public void Input7()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "7";
+                return;
+            }
+        }
+        
+    }
+    public void Input8()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "8";
+                return;
+            }
+        }
+        
+    }
+    public void Input9()
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].text.Length != 1)
+            {
+                inputs[i].text = "9";
+                return;
+            }
+        }
+        
+    }
+ 
+
+
+    
+
+    
 
 }

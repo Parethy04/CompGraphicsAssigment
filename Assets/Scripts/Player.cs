@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        /*
         Input.GetMouseButtonDown(0);
         {
             Mouse mouse = Mouse.current;
@@ -61,7 +62,7 @@ public class Player : MonoBehaviour
 
             }
         }
-    
+    */
 
     if (isSprinting )
         {
