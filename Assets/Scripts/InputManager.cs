@@ -30,8 +30,11 @@ public class InputManager : MonoBehaviour
         {
             player.cancelSprint();   
         };
+        controls.InGame.MousePos.performed += _ =>
+        {
+            mousePos = _.ReadValue<Vector2>();
+        };
 
- 
 
     }
    

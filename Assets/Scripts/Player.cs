@@ -49,13 +49,15 @@ public class Player : MonoBehaviour
             Mouse mouse = Mouse.current;
             if (mouse.leftButton.wasPressedThisFrame)
             {
-                Vector3 mousePosition = mouse.position.ReadValue();
-                Ray ray = playerCam.ScreenPointToRay(mousePosition);
+                mousePos = playerCam.ScreenToWorldPoint(InputManager.GetMousePos());
+
+              
+                Ray ray = playerCam.ScreenPointToRay(mousePos);
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
+                    Debug.DrawRay(ray.origin, ray.direction * hit.distance, Color.red, 10);
                     print(hit.collider.name);
                 }
-                // mousePos = playerCam.ScreenToWorldPoint(InputManager.GetMousePos());
 
             }
         }
