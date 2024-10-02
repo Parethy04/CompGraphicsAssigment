@@ -3853,7 +3853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &372601753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8696,7 +8696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8865,7 +8865,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1760275335}
         m_TargetAssemblyTypeName: CodePanel, Assembly-CSharp
-        m_MethodName: Input9
+        m_MethodName: EnterCode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18760,6 +18760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitBarrier: {fileID: 970417223}
   comboNumstemp: 
+  instructions: {fileID: 820786028}
   CodePanels:
   - {fileID: 372601752}
   map: {fileID: 1407816471}
