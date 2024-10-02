@@ -317,9 +317,15 @@ CinemachineInputProvider inputProvider;
               {
                      for (int i = 0; i < inputs.Count; i++)
                      {
-                             inputs[i].text = " ";
-                             inputs[i] = null;
+                         inputs[i].text = "";
+                        print(inputs[i].text.Length); 
                      }
+
+                     output1 = 0;
+                     output2 = 0;
+                     output3 = 0;
+                     output4 = 0;
+                          
                      instructions.text = " Wrong Code, reenter your code!";
               }
                 
