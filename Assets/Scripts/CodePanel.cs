@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class CodePanel : MonoBehaviour
     private string input;
     private bool inArea; 
     private int output1, output2 , output3, output4;
+    [SerializeField] private TextMeshProUGUI instructions; 
     [SerializeField]GameObject[] CodePanels;
     [SerializeField] private Image map;
     [SerializeField]private List<TMP_InputField> inputs;
@@ -27,9 +29,10 @@ public class CodePanel : MonoBehaviour
     [SerializeField] TMP_Text Board2;
     [SerializeField] TMP_Text Board3;
     [SerializeField] TMP_Text Board4;
+CinemachineInputProvider inputProvider;
     void Start()
     {
-        
+        inputProvider = FindObjectOfType<CinemachineInputProvider>();
         //Placing generated numbers on signs 
         Board1.text = comboNumstemp[0].ToString();
         Board2.text = comboNumstemp[1].ToString();
@@ -70,10 +73,10 @@ public class CodePanel : MonoBehaviour
     {
         input = input1;
         int.TryParse(input1, out output1);
+        print(output1);
         if (output1 == comboNumstemp[0] && inputs[0] != null)
         {
             digit1Correct = true;
-            inputs[0].enabled = false;
         }
         else
         {
@@ -88,7 +91,6 @@ public class CodePanel : MonoBehaviour
         if (output2 ==  comboNumstemp[1] && inputs[1] != null)
         {
             digit2Correct = true;
-            inputs[1].enabled = false;
         }
         else
         {
@@ -103,7 +105,6 @@ public class CodePanel : MonoBehaviour
         if (output3 == comboNumstemp[2]&& inputs[2] != null)
         {
             digit3Correct = true;
-            inputs[2].enabled = false;
         }
         else
         {
@@ -118,7 +119,6 @@ public class CodePanel : MonoBehaviour
         if (output4 == comboNumstemp[3]&& inputs[3] != null)
         {
             digit4Correct = true;
-            inputs[3].enabled = false;
         }
         else
         {
@@ -130,19 +130,9 @@ public class CodePanel : MonoBehaviour
     void Update()
     {
         //Opening exit door if correct input is given 
-        if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
-        {
-            exitBarrier.SetActive(false);
-            foreach (var item in CodePanels)
-            {
-                item.SetActive(false);
-            }
-        }
        
-        else
-        {
-            return;
-        }
+       
+     
         
 
     }
@@ -155,6 +145,8 @@ public class CodePanel : MonoBehaviour
             print(true);
             if (inArea && isClicked)
             {
+                inputProvider.enabled = false;
+
                 foreach (var item in CodePanels)
                 {
                     item.SetActive(true);
@@ -171,7 +163,7 @@ public class CodePanel : MonoBehaviour
                     item.SetActive(false);
                 }
                 map.enabled = true;
-                
+                inputProvider.enabled = true;
                 isClicked = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
@@ -185,6 +177,8 @@ public class CodePanel : MonoBehaviour
         {
             isClicked = false;
             map.enabled = true;
+            inputProvider.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
             foreach (var item in CodePanels)
             {
                 item.SetActive(false);
@@ -197,7 +191,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1|| inputs[i].text == null)
             {
                 inputs[i].text = "0";
                 return;
@@ -208,7 +202,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1 || inputs[i].text == null)
             {
                 inputs[i].text = "1";
                 return;
@@ -219,7 +213,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1|| inputs[i].text == null)
             {
                 inputs[i].text = "2";
                 return;
@@ -230,7 +224,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1|| inputs[i].text == null)
             {
                 inputs[i].text = "3";
                 return;
@@ -241,7 +235,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1 )
             {
                 inputs[i].text = "4";
                 return;
@@ -276,7 +270,7 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1 )
             {
                 inputs[i].text = "7";
                 return;
@@ -300,15 +294,37 @@ public class CodePanel : MonoBehaviour
     {
         for (int i = 0; i < inputs.Count; i++)
         {
-            if (inputs[i].text.Length != 1)
+            if (inputs[i].text.Length != 1 )
             {
                 inputs[i].text = "9";
                 return;
             }
         }
+            
         
     }
- 
+         public void EnterCode()
+         {
+              if (digit1Correct && digit2Correct && digit3Correct && digit4Correct)
+                     {
+                         exitBarrier.SetActive(false);
+                         foreach (var item in CodePanels)
+                         {
+                             item.SetActive(false);
+                         }
+                     }
+              else
+              {
+                     for (int i = 0; i < inputs.Count; i++)
+                     {
+                             inputs[i].text = " ";
+                             inputs[i] = null;
+                     }
+                     instructions.text = " Wrong Code, reenter your code!";
+              }
+                
+         }
+
 
 
     
