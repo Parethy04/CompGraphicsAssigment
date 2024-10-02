@@ -8,6 +8,7 @@ TagManager:
   - Exit
   - Boards
   - CodeSpawnPoints
+  - hidingSpot
   layers:
   - Default
   - TransparentFX

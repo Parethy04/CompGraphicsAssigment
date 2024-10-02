@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     //Sprinting
+    Vector3 previousPos;
     private bool isSprinting; 
     [SerializeField]  float sprintTime;
     private bool onCoolDown;
@@ -29,7 +30,11 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject enemylookat;
     private Vector3 mousePos;
     RaycastHit hit;
-  
+    public CinemachineVirtualCamera HidingCam;
+    bool inhidingRange = false;
+    public bool isHiding = false;
+    [SerializeField] GameObject hitbox;
+    [SerializeField]  GameObject flashlight;
     void Start()
     {
         codePanel = FindObjectOfType<CodePanel>();
@@ -149,6 +154,7 @@ public class Player : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("WinArea");
         }
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -156,6 +162,14 @@ public class Player : MonoBehaviour
         {
             dead = true;
             StartCoroutine(LookatDeath());
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "hidingSpot")
+        {
+            inhidingRange = true;
+            HidingCam = other.gameObject.GetComponent<CinemachineVirtualCamera>();
         }
     }
     public IEnumerator LookatDeath()
@@ -166,6 +180,40 @@ public class Player : MonoBehaviour
         codePanel.CloseCodePanel();
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    internal void Hide()
+    {
+        StartCoroutine(GoIntoHiding());
+    }
+    public IEnumerator GoIntoHiding()
+    {
+        if (!isHiding)
+        {
+            if (inhidingRange && !dead)
+            {
+                previousPos = gameObject.transform.position;
+                HidingCam.Priority = 100;
+                isHiding = true;
+                GameObject.FindWithTag("Enemy").GetComponent<Enemy>().Spotted = false;
+                flashlight.SetActive(false);
+                yield return new WaitForSeconds(2);
+                //gameObject.GetComponent<CapsuleCollider>().enabled = false;
+                gameObject.transform.position = HidingCam.transform.position;
+                hitbox.SetActive(false);
+            }
+        }
+        else if (isHiding)
+        {
+            HidingCam.Priority = 9;
+            isHiding = false;
+            gameObject.transform.position = previousPos;
+            flashlight.SetActive(true);
+            //gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            hitbox.SetActive(true);
+        }
+
+        
     }
 
 

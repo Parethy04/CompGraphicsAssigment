@@ -34,7 +34,10 @@ public class InputManager : MonoBehaviour
         {
             mousePos = _.ReadValue<Vector2>();
         };
-
+        controls.InGame.Hide.performed += _ =>
+        {
+            player.Hide();
+        };
 
     }
    

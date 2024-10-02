@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public bool _IsHunting = false;
    
 
-    bool Spotted;
+    public bool Spotted;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,10 @@ public class Enemy : MonoBehaviour
             
             
             
+            
             _Agent.destination = player.position;
+            
+            
         }
         else if (_IsActive)
         {
@@ -79,6 +82,7 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(3);
         Spotted = false;
         Debug.Log("lost");
+        StartCoroutine(DesLocation());
     }
     IEnumerator DesLocation()
     {
