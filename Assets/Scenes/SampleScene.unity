@@ -8656,7 +8656,7 @@ GameObject:
   - component: {fileID: 820786029}
   - component: {fileID: 820786028}
   m_Layer: 5
-  m_Name: Intructions
+  m_Name: IntructionsMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18760,7 +18760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitBarrier: {fileID: 970417223}
   comboNumstemp: 
-  instructions: {fileID: 820786028}
+  instructionsMid: {fileID: 820786028}
+  instructionsTopRight: {fileID: 538437321}
   CodePanels:
   - {fileID: 372601752}
   map: {fileID: 1407816471}
@@ -18773,6 +18774,7 @@ MonoBehaviour:
   Board2: {fileID: 912536948}
   Board3: {fileID: 642630921}
   Board4: {fileID: 768604752}
+  inputProvider: {fileID: 1917763030}
 --- !u!1 &1763398237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,

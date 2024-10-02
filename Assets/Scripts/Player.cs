@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxSprintTime;
     //Camera location
     private Transform CamTransform;
-
+    CodePanel codePanel;
     //standard movement
     [SerializeField] float moveSpeed;
     Rigidbody rb;
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
   
     void Start()
     {
-
+        codePanel = FindObjectOfType<CodePanel>();
         playerCam = gameObject.GetComponentInChildren<Camera>();
         rb = GetComponent<Rigidbody>();
         InputManager.Init(this);
@@ -163,6 +163,7 @@ public class Player : MonoBehaviour
         cineCam.Priority = 0;
         sound.Play();
         yield return new WaitForSeconds (3);
+        codePanel.CloseCodePanel();
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenu");
     }

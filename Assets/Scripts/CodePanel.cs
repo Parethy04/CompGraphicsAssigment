@@ -17,7 +17,7 @@ public class CodePanel : MonoBehaviour
     private string input;
     private bool inArea; 
     private int output1, output2 , output3, output4;
-    [SerializeField] private TextMeshProUGUI instructions; 
+    [SerializeField] private TextMeshProUGUI instructionsMid, instructionsTopRight; 
     [SerializeField]GameObject[] CodePanels;
     [SerializeField] private Image map;
     [SerializeField]private List<TMP_InputField> inputs;
@@ -29,10 +29,9 @@ public class CodePanel : MonoBehaviour
     [SerializeField] TMP_Text Board2;
     [SerializeField] TMP_Text Board3;
     [SerializeField] TMP_Text Board4;
-CinemachineInputProvider inputProvider;
+    [SerializeField]CinemachineInputProvider inputProvider;
     void Start()
     {
-        inputProvider = FindObjectOfType<CinemachineInputProvider>();
         //Placing generated numbers on signs 
         Board1.text = comboNumstemp[0].ToString();
         Board2.text = comboNumstemp[1].ToString();
@@ -325,16 +324,16 @@ CinemachineInputProvider inputProvider;
                      output2 = 0;
                      output3 = 0;
                      output4 = 0;
-                          
-                     instructions.text = " Wrong Code, reenter your code!";
+                     instructionsMid.text = " Wrong Code, reenter your code!";
               }
                 
          }
 
+     
 
 
-    
 
-    
+
+
 
 }
