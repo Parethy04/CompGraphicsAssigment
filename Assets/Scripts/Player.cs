@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    
     //Sprinting
     Vector3 previousPos;
     private bool isSprinting; 
@@ -23,20 +24,32 @@ public class Player : MonoBehaviour
     private Vector3 smoothedMoveDir;
     private Vector3 smoothedMoveVelo;
     private Vector3 moveDir;
+    //Death and sounds
     [SerializeField] AudioSource sound;
     [SerializeField] CinemachineVirtualCamera cineCam;
-    Camera playerCam;
     public bool dead;
     [SerializeField] GameObject enemylookat;
+    
+    //testing 
     private Vector3 mousePos;
+    Camera playerCam;
     RaycastHit hit;
+    //hiding 
     public CinemachineVirtualCamera HidingCam;
     bool inhidingRange = false;
     public bool isHiding = false;
     [SerializeField] GameObject hitbox;
     [SerializeField]  GameObject flashlight;
+    //Heartbeat 
+    private float distance;
+    private bool isPlaying;
+    [SerializeField] AudioSource heartBeat;
+    private Enemy _enemy;
+    [SerializeField] AudioClip heartbeatS, heartbeatM,heartbeatSM, heartbeatF;
+
     void Start()
     {
+        _enemy = FindObjectOfType<Enemy>();
         codePanel = FindObjectOfType<CodePanel>();
         playerCam = gameObject.GetComponentInChildren<Camera>();
         rb = GetComponent<Rigidbody>();
@@ -47,8 +60,15 @@ public class Player : MonoBehaviour
 
     }
 
+    
     void Update()
     {
+         distance = Vector3.Distance(transform.position, _enemy.transform.position);
+         print(distance);
+        if (distance < 150f)
+        {
+            StartCoroutine(CheckDistance());
+        }
         /*
         Input.GetMouseButtonDown(0);
         {
@@ -84,9 +104,6 @@ public class Player : MonoBehaviour
                 sprintTime = 0;
             }
         }
-     
-
-
           if (!isSprinting ||  sprintTime <= 0 )
         {
             if (sprintTime <= 2 || sprintTime <= maxSprintTime)
@@ -95,15 +112,54 @@ public class Player : MonoBehaviour
                 {
                     sprintTime += Time.deltaTime;
                 }
-                
             }
-
-
-               
-            
         } 
         
     }
+
+    private IEnumerator CheckDistance()
+    {
+        if(!isPlaying)
+        {
+            isPlaying = true;
+            switch (distance)
+            {
+                case <= 150 and >= 100:
+                    heartBeat.volume = 0.25f; 
+                    heartBeat.clip = heartbeatS;
+                    heartBeat.Play();
+                    break;
+                case <= 99 and >= 75:
+                    heartBeat.Stop();
+                    heartBeat.volume = 0.50f; 
+                    heartBeat.clip = heartbeatSM;
+                    heartBeat.Play();
+                    break;
+                case <= 74 and >= 50:
+                    heartBeat.Stop();
+                    heartBeat.volume = 0.75f; 
+                    heartBeat.clip = heartbeatM;
+                    heartBeat.Play();
+                    break;
+                case <= 49:
+                    heartBeat.Stop();
+                    heartBeat.volume = 1f; 
+                    heartBeat.clip = heartbeatF;
+                   heartBeat.Play();
+                    break;
+            }
+        }
+        else
+        {
+            yield break;
+        }
+
+        yield return new WaitForSeconds(1f);
+        isPlaying = false;
+
+
+    }
+
     private void FixedUpdate()
     {
         if (!dead)

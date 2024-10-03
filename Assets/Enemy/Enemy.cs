@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     NavMeshAgent _Agent;
     bool _IsActive = true;
     public bool _IsHunting = false;
-   
+  
 
     public bool Spotted;
     // Start is called before the first frame update
@@ -33,13 +33,7 @@ public class Enemy : MonoBehaviour
     {
         if (Spotted)
         {
-            
-            
-            
-            
             _Agent.destination = player.position;
-            
-            
         }
         else if (_IsActive)
         {
