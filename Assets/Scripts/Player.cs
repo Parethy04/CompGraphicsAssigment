@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     private bool isPlaying;
     [SerializeField] AudioSource heartBeat;
     private Enemy _enemy;
-    [SerializeField] AudioClip heartbeatS, heartbeatM,heartbeatSM, heartbeatF;
+    [SerializeField] AudioClip heartbeatS, heartbeatSM, heartbeatM, heartbeatF;
 
     void Start()
     {
@@ -68,6 +68,10 @@ public class Player : MonoBehaviour
         if (distance < 150f)
         {
             StartCoroutine(CheckDistance());
+        }
+        else
+        {
+            heartBeat.Stop();
         }
         /*
         Input.GetMouseButtonDown(0);

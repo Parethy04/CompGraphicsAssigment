@@ -16498,10 +16498,10 @@ MonoBehaviour:
   hitbox: {fileID: 0}
   flashlight: {fileID: 0}
   heartBeat: {fileID: 2058492918}
-  heartbeatS: {fileID: 0}
-  heartbeatM: {fileID: 0}
-  heartbeatSM: {fileID: 0}
-  heartbeatF: {fileID: 0}
+  heartbeatS: {fileID: 8300000, guid: 39d54ef928bcc0f46a4b06a002db4681, type: 3}
+  heartbeatSM: {fileID: 8300000, guid: 11242f6af81ef0e4f9706d51f610fc26, type: 3}
+  heartbeatM: {fileID: 8300000, guid: a588263ef07042f4b9172dd2b1e67333, type: 3}
+  heartbeatF: {fileID: 8300000, guid: 2c8c04edff115b34080251b527220956, type: 3}
 --- !u!54 &1535558388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21727,7 +21727,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0c332e575d017be4ca0e9fad15dbe5d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 39d54ef928bcc0f46a4b06a002db4681, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0
   m_Pitch: 1
