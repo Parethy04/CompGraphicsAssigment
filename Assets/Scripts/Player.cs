@@ -234,7 +234,7 @@ public class Player : MonoBehaviour
     }
     public IEnumerator LookatDeath()
     {
-        cineCam.Priority = 0;
+        cineCam.Priority = 100;
         sound.Play();
         yield return new WaitForSeconds (3);
         codePanel.CloseCodePanel();
