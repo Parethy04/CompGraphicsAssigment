@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         if (Timer <= 0)
         {
             Timer = 0;
-            TimerDisplay.text = "IT KNOWS YOUR LOCATION!";
+            TimerDisplay.text = "YOU CAN'T HIDE!";
             monsterAI._IsHunting = true;
         }
         

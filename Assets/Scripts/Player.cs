@@ -123,45 +123,47 @@ public class Player : MonoBehaviour
 
     private IEnumerator CheckDistance()
     {
-        if(!isPlaying)
+        if (dead)
         {
-            isPlaying = true;
-            switch (distance)
+            if (!isPlaying)
             {
-                case <= 150 and >= 100:
-                    heartBeat.volume = 0.25f; 
-                    heartBeat.clip = heartbeatS;
-                    heartBeat.Play();
-                    break;
-                case <= 99 and >= 75:
-                    heartBeat.Stop();
-                    heartBeat.volume = 0.50f; 
-                    heartBeat.clip = heartbeatSM;
-                    heartBeat.Play();
-                    break;
-                case <= 74 and >= 50:
-                    heartBeat.Stop();
-                    heartBeat.volume = 0.75f; 
-                    heartBeat.clip = heartbeatM;
-                    heartBeat.Play();
-                    break;
-                case <= 49:
-                    heartBeat.Stop();
-                    heartBeat.volume = 1f; 
-                    heartBeat.clip = heartbeatF;
-                   heartBeat.Play();
-                    break;
+                isPlaying = true;
+                switch (distance)
+                {
+                    case <= 150 and >= 100:
+                        heartBeat.volume = 0.25f;
+                        heartBeat.clip = heartbeatS;
+                        heartBeat.Play();
+                        break;
+                    case <= 99 and >= 75:
+                        heartBeat.Stop();
+                        heartBeat.volume = 0.50f;
+                        heartBeat.clip = heartbeatSM;
+                        heartBeat.Play();
+                        break;
+                    case <= 74 and >= 50:
+                        heartBeat.Stop();
+                        heartBeat.volume = 0.75f;
+                        heartBeat.clip = heartbeatM;
+                        heartBeat.Play();
+                        break;
+                    case <= 49:
+                        heartBeat.Stop();
+                        heartBeat.volume = 1f;
+                        heartBeat.clip = heartbeatF;
+                        heartBeat.Play();
+                        break;
+                }
             }
+            else
+            {
+                yield break;
+            }
+
+            yield return new WaitForSeconds(1f);
+            isPlaying = false;
+
         }
-        else
-        {
-            yield break;
-        }
-
-        yield return new WaitForSeconds(1f);
-        isPlaying = false;
-
-
     }
 
     private void FixedUpdate()
@@ -234,6 +236,8 @@ public class Player : MonoBehaviour
     }
     public IEnumerator LookatDeath()
     {
+        heartBeat.clip = heartbeatF;
+        heartBeat.Play();
         cineCam.Priority = 100;
         sound.Play();
         yield return new WaitForSeconds (3);
