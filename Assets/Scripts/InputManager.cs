@@ -38,6 +38,10 @@ public class InputManager : MonoBehaviour
         {
             player.Hide();
         };
+        controls.InGame.LeftClick.performed += _ =>
+        {
+            player.leftClick();
+        };
 
     }
    

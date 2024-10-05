@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform _Target;
     [SerializeField] Transform player;
     [SerializeField] AudioSource soundSource;
+    [SerializeField] public GameObject startPos;
     NavMeshAgent _Agent;
     bool _IsActive = true;
     public bool _IsHunting = false;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
     }
     private void Destination()
     {
+
         if (Spotted)
         {
             _Agent.destination = player.position;
@@ -43,11 +45,14 @@ public class Enemy : MonoBehaviour
         else if (_IsHunting)
         {
             _Agent.destination = player.position;
+            _Agent.speed = 15;
         }
         else if (player.GetComponent<Player>().dead == true)
         {
             _Agent.SetDestination(gameObject.transform.position);
         }
+
+
     }
     private void OnTriggerStay(Collider other)
     {
@@ -78,7 +83,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("lost");
         StartCoroutine(DesLocation());
     }
-    IEnumerator DesLocation()
+    public IEnumerator DesLocation()
     {
         _IsActive = false;
         NavMeshHit hit;

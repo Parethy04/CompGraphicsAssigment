@@ -9,6 +9,7 @@ TagManager:
   - Boards
   - CodeSpawnPoints
   - hidingSpot
+  - CodePanel
   layers:
   - Default
   - TransparentFX

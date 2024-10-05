@@ -45,6 +45,7 @@ public class CodePanel : MonoBehaviour
         {
             inArea = true;
             Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
         }
         
     }
@@ -56,6 +57,8 @@ public class CodePanel : MonoBehaviour
             inArea = false;
             CloseCodePanel();
             Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            
         }
         
     }

@@ -18,6 +18,9 @@ public class Player : MonoBehaviour
     //Camera location
     private Transform CamTransform;
     CodePanel codePanel;
+    [SerializeField]bool canusePanel;
+    [SerializeField] float f;
+    [SerializeField] GameObject codePanelInfo;
     //standard movement
     [SerializeField] float moveSpeed;
     Rigidbody rb;
@@ -64,9 +67,9 @@ public class Player : MonoBehaviour
     void Update()
     {
          distance = Vector3.Distance(transform.position, _enemy.transform.position);
-         print(distance);
+       
         if (distance < 150f)
-        {
+        { 
             StartCoroutine(CheckDistance());
         }
         else
@@ -123,7 +126,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator CheckDistance()
     {
-        if (dead)
+        if (!dead)
         {
             if (!isPlaying)
             {
@@ -233,6 +236,24 @@ public class Player : MonoBehaviour
             inhidingRange = true;
             HidingCam = other.gameObject.GetComponent<CinemachineVirtualCamera>();
         }
+        if (other.tag == "CodePanel")
+        {
+            canusePanel = true;
+            codePanelInfo.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "CodePanel")
+        {
+            canusePanel = false;
+            codePanelInfo.SetActive(false); 
+            
+        }
+        if (other.tag == "hidingSpot")
+        {
+            HidingCam = null;
+        }
     }
     public IEnumerator LookatDeath()
     {
@@ -256,31 +277,54 @@ public class Player : MonoBehaviour
         {
             if (inhidingRange && !dead)
             {
+                hitbox.SetActive(false);
                 previousPos = gameObject.transform.position;
                 HidingCam.Priority = 100;
                 isHiding = true;
                 GameObject.FindWithTag("Enemy").GetComponent<Enemy>().Spotted = false;
+                GameObject.FindWithTag("Enemy").GetComponent<Enemy>().DesLocation();
                 flashlight.SetActive(false);
                 yield return new WaitForSeconds(2);
-                //gameObject.GetComponent<CapsuleCollider>().enabled = false;
+                gameObject.GetComponent<CapsuleCollider>().enabled = false;
+                
                 gameObject.transform.position = HidingCam.transform.position;
-                hitbox.SetActive(false);
+                
             }
         }
         else if (isHiding)
         {
             HidingCam.Priority = 9;
+            gameObject.GetComponent<CapsuleCollider>().enabled = true;
             isHiding = false;
             gameObject.transform.position = previousPos;
             flashlight.SetActive(true);
-            //gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            HidingCam = null;
             hitbox.SetActive(true);
         }
 
         
     }
 
+    public void leftClick()
+    {
 
+        rightClick();
+        
+    }
+
+    public void rightClick()
+    {
+        if (canusePanel)
+        {
+            codePanelInfo.SetActive(true);
+            f++;
+        }
+        else
+        {
+            Debug.Log(f);
+        }
+    
+    }
 }
     
 

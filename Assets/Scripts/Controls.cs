@@ -71,6 +71,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""18efa476-2647-4845-8f00-d423d63266d4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +203,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Hide"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e665a9bf-c159-4f78-aa9f-8551532c2a96"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -207,6 +227,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_InGame_Sprint = m_InGame.FindAction("Sprint", throwIfNotFound: true);
         m_InGame_MousePos = m_InGame.FindAction("MousePos", throwIfNotFound: true);
         m_InGame_Hide = m_InGame.FindAction("Hide", throwIfNotFound: true);
+        m_InGame_LeftClick = m_InGame.FindAction("LeftClick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -271,6 +292,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_InGame_Sprint;
     private readonly InputAction m_InGame_MousePos;
     private readonly InputAction m_InGame_Hide;
+    private readonly InputAction m_InGame_LeftClick;
     public struct InGameActions
     {
         private @Controls m_Wrapper;
@@ -280,6 +302,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Sprint => m_Wrapper.m_InGame_Sprint;
         public InputAction @MousePos => m_Wrapper.m_InGame_MousePos;
         public InputAction @Hide => m_Wrapper.m_InGame_Hide;
+        public InputAction @LeftClick => m_Wrapper.m_InGame_LeftClick;
         public InputActionMap Get() { return m_Wrapper.m_InGame; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -304,6 +327,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Hide.started -= m_Wrapper.m_InGameActionsCallbackInterface.OnHide;
                 @Hide.performed -= m_Wrapper.m_InGameActionsCallbackInterface.OnHide;
                 @Hide.canceled -= m_Wrapper.m_InGameActionsCallbackInterface.OnHide;
+                @LeftClick.started -= m_Wrapper.m_InGameActionsCallbackInterface.OnLeftClick;
+                @LeftClick.performed -= m_Wrapper.m_InGameActionsCallbackInterface.OnLeftClick;
+                @LeftClick.canceled -= m_Wrapper.m_InGameActionsCallbackInterface.OnLeftClick;
             }
             m_Wrapper.m_InGameActionsCallbackInterface = instance;
             if (instance != null)
@@ -323,6 +349,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Hide.started += instance.OnHide;
                 @Hide.performed += instance.OnHide;
                 @Hide.canceled += instance.OnHide;
+                @LeftClick.started += instance.OnLeftClick;
+                @LeftClick.performed += instance.OnLeftClick;
+                @LeftClick.canceled += instance.OnLeftClick;
             }
         }
     }
@@ -334,5 +363,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnMousePos(InputAction.CallbackContext context);
         void OnHide(InputAction.CallbackContext context);
+        void OnLeftClick(InputAction.CallbackContext context);
     }
 }
