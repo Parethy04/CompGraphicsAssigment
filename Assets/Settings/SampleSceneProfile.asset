@@ -69,7 +69,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 65472
   tint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
@@ -133,10 +133,10 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 33.3
+    m_Value: 0.37
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 34.7
+    m_Value: 13.6
   gaussianMaxRadius:
     m_OverrideState: 0
     m_Value: 1
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_Value: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.4575472, b: 0.4575472, a: 1}
+    m_Value: {r: 0.46226418, g: 0.45136172, b: 0.45136172, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   active: 0
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   neutralHDRRangeReductionMode:
     m_OverrideState: 0
     m_Value: 2
@@ -348,7 +348,7 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.9525698, y: 1, z: 0.99252105, w: -0.3618711}
+    m_Value: {x: 1, y: 0.98962414, z: 0.9938123, w: -0.695088}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -0.78964}
@@ -356,7 +356,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -0.81933016}
   shadowsStart:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.39
   shadowsEnd:
     m_OverrideState: 0
