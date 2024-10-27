@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -525,10 +530,40 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 214f8e65ce52b81408711ccd104991cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 23a243f5c01cd214599223dfd2142410, type: 2}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[7]
       value: 
       objectReference: {fileID: 2100000, guid: 403290009b881fd4cae7448a04082be7, type: 2}
     - target: {fileID: 919132149155446097, guid: 40d90002c4226674990c6f152437aed3,
@@ -671,6 +706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1113,6 +1153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1198,6 +1243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1367,6 +1417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1671,6 +1726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1937,6 +1997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2759,6 +2824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3143,6 +3213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3228,6 +3303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3315,6 +3395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3328,79 +3413,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2049621404}
   m_SourcePrefab: {fileID: 100100000, guid: bf7f1c7881906514fa39a2fff8c3b795, type: 3}
---- !u!1001 &324135567
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -49.282
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.686
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 291.551
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.34422922
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.6709105
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.22514807
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.6170038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -132.29199
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270.138
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596554506780851268, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 10.503998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2117757740914370302, guid: aff8208af45cb0546b9e5c5a86d49aa5,
-        type: 3}
-      propertyPath: m_Name
-      value: Skull 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aff8208af45cb0546b9e5c5a86d49aa5, type: 3}
 --- !u!1 &326486622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3560,6 +3572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3924,6 +3941,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4262,6 +4284,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4347,6 +4374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4683,6 +4715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4852,6 +4889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5002,13 +5044,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0.9851094, y: 0, z: 0, w: 0.17192921}
   m_LocalPosition: {x: 76.5, y: 39.2, z: 141.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 160.2, y: 0, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5257,6 +5299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5342,6 +5389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5429,6 +5481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5514,6 +5571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5724,6 +5786,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -5733,7 +5800,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 214f8e65ce52b81408711ccd104991cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 23a243f5c01cd214599223dfd2142410, type: 2}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -6024,6 +6091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6246,6 +6318,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6429,6 +6506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6933,6 +7015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7457,6 +7544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7542,6 +7634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7671,8 +7768,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7938,8 +8035,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8570,6 +8667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8649,8 +8751,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8800,6 +8902,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8885,6 +8992,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9134,6 +9246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9324,6 +9441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9410,6 +9532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9433,6 +9560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742274568}
   - component: {fileID: 742274567}
+  - component: {fileID: 742274569}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9471,6 +9599,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742274569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742274566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d060ad0258a31642a7fb0ed329df1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Light: {fileID: 410087039}
+  terrain: {fileID: 84860801}
+  LightingChanges: []
+  _diffuseMaterials:
+  - {fileID: 2100000, guid: 733552226cbb1294790182df2a828b10, type: 2}
+  - {fileID: 2100000, guid: 97713e443cc0ed1498030044c4d96a0c, type: 2}
+  - {fileID: 2100000, guid: 23a243f5c01cd214599223dfd2142410, type: 2}
+  - {fileID: 2100000, guid: 96120be5a1ea3aa4d8c8726c513f52b4, type: 2}
+  _diffuseAndAmbientMaterials:
+  - {fileID: 2100000, guid: 4145cb61aac818a41930fdb345123280, type: 2}
+  - {fileID: 2100000, guid: 3863d6340cfcb704b974ce03b5f47006, type: 2}
+  - {fileID: 2100000, guid: 8776aacf14c5e7a4fb4c3bc0d1dc8eb3, type: 2}
+  - {fileID: 2100000, guid: 76847eaa040156649ba559023f774682, type: 2}
+  _SpecularMaterials:
+  - {fileID: 2100000, guid: 5718265157ef4964898efb9f279b7493, type: 2}
+  - {fileID: 2100000, guid: 2fab9c68d69066d42aae621447f75e0e, type: 2}
+  - {fileID: 2100000, guid: 3248053e8241e5147ade1feb5473785b, type: 2}
+  - {fileID: 2100000, guid: a8b5fa206c0199545aa8f38cdf5a21ab, type: 2}
 --- !u!1001 &742679355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9543,6 +9701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9629,8 +9792,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278195253
-  m_fontColor: {r: 0.20754719, g: 0.076919384, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9770,6 +9933,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9855,6 +10023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10040,6 +10213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10187,94 +10365,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820786026}
   m_CullTransparentMesh: 1
---- !u!1001 &821191368
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 77317844911573050, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bbea1a52f7eab054fabf70df5074091a, type: 2}
-    - target: {fileID: 2035624486325980646, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bbea1a52f7eab054fabf70df5074091a, type: 2}
-    - target: {fileID: 2197706214378193749, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bbea1a52f7eab054fabf70df5074091a, type: 2}
-    - target: {fileID: 7380202575628588922, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shed
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 190.83629
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.2411623
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 281.34186
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863407610978078144, guid: 6fd9031335fd59645b5fad0e27d3df3e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6fd9031335fd59645b5fad0e27d3df3e, type: 3}
 --- !u!1 &826747712
 GameObject:
   m_ObjectHideFlags: 0
@@ -10637,6 +10727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10777,6 +10872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11243,8 +11343,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11700,6 +11800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11970,6 +12075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12496,6 +12606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12884,6 +12999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13102,6 +13222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13376,6 +13501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13517,6 +13647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13603,6 +13738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13688,6 +13828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14256,6 +14401,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14577,6 +14727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14662,6 +14817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14801,6 +14961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15279,6 +15444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15364,6 +15534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15772,6 +15947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16127,6 +16307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16212,6 +16397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16299,6 +16489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16384,6 +16579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16820,6 +17020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17662,6 +17867,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18056,6 +18266,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -18065,7 +18280,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 214f8e65ce52b81408711ccd104991cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 23a243f5c01cd214599223dfd2142410, type: 2}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -18415,6 +18630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18812,6 +19032,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18947,6 +19172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19032,6 +19262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19158,6 +19393,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 19efe7ee9b1021646b8c9a33d4cc7eb7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 19efe7ee9b1021646b8c9a33d4cc7eb7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e01b336f80cd0404eabde6ae9857872f, type: 2}
+    - target: {fileID: -1461304994638716399, guid: 19efe7ee9b1021646b8c9a33d4cc7eb7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e01b336f80cd0404eabde6ae9857872f, type: 2}
+    - target: {fileID: -516098083770646512, guid: 19efe7ee9b1021646b8c9a33d4cc7eb7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 19efe7ee9b1021646b8c9a33d4cc7eb7,
         type: 3}
       propertyPath: m_Name
@@ -19252,6 +19507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19337,6 +19597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19424,6 +19689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19509,6 +19779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19716,6 +19991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low Poly tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5165042612364412330, guid: 141cbb7671b6bec458051296d2896dd6,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     - target: {fileID: 5541180504466579216, guid: 141cbb7671b6bec458051296d2896dd6,
         type: 3}
@@ -19959,6 +20239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20094,6 +20379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20179,6 +20469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20349,6 +20644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20425,6 +20725,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 40d90002c4226674990c6f152437aed3,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -20434,7 +20739,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 214f8e65ce52b81408711ccd104991cc, type: 2}
+      objectReference: {fileID: 2100000, guid: 23a243f5c01cd214599223dfd2142410, type: 2}
     - target: {fileID: -4683669308469848369, guid: 40d90002c4226674990c6f152437aed3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -20718,8 +21023,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278195253
-  m_fontColor: {r: 0.20754719, g: 0.076919384, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21097,6 +21402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21183,6 +21493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21204,6 +21519,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1440461970}
     m_Modifications:
+    - target: {fileID: 80624499025873263, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_Name
+      value: Mons
+      objectReference: {fileID: 0}
+    - target: {fileID: 80624499025873263, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: 455819947984979546, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Name
@@ -21284,6 +21609,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3632235449257393769, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_Name
+      value: Mons
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632235449257393769, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: 3786980033346932804, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -21293,12 +21628,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e93d5cb10621772428c124640982c759, type: 2}
+      objectReference: {fileID: 2100000, guid: 97713e443cc0ed1498030044c4d96a0c, type: 2}
     - target: {fileID: 3786980033346932804, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    - target: {fileID: 4047372238795093259, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_Name
+      value: Mons
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047372238795093259, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: 5547948875116869293, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -21308,7 +21653,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e93d5cb10621772428c124640982c759, type: 2}
+      objectReference: {fileID: 2100000, guid: 97713e443cc0ed1498030044c4d96a0c, type: 2}
     - target: {fileID: 5547948875116869293, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -21338,12 +21683,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e93d5cb10621772428c124640982c759, type: 2}
+      objectReference: {fileID: 2100000, guid: 97713e443cc0ed1498030044c4d96a0c, type: 2}
     - target: {fileID: 8343560679689667550, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    - target: {fileID: 8885309868309554333, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_Name
+      value: Mons
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885309868309554333, guid: be7e4b9c7ef87c74badc739ef790be03,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     - target: {fileID: 9097963446637411989, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -21353,7 +21708,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e93d5cb10621772428c124640982c759, type: 2}
+      objectReference: {fileID: 2100000, guid: 97713e443cc0ed1498030044c4d96a0c, type: 2}
     - target: {fileID: 9097963446637411989, guid: be7e4b9c7ef87c74badc739ef790be03,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -21436,6 +21791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21890,6 +22250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21976,6 +22341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22061,6 +22431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22446,6 +22821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23170,6 +23550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23381,8 +23766,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -23521,6 +23906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23742,6 +24132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23926,6 +24321,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24005,8 +24405,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278193702
-  m_fontColor: {r: 0.1509434, g: 0.05641727, b: 0, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -24282,6 +24682,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24450,6 +24855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24684,6 +25094,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24898,6 +25313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Low poly Wall (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24983,6 +25403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Low poly Wall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf7f1c7881906514fa39a2fff8c3b795,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25582,7 +26007,7 @@ GameObject:
   - component: {fileID: 1393218360308182815}
   m_Layer: 0
   m_Name: Rock (2)
-  m_TagString: Untagged
+  m_TagString: LightingChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26058,79 +26483,6 @@ Transform:
   - {fileID: 7803571599122919949}
   m_Father: {fileID: 3988923662422585914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3420223238902355423
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -48.646
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.047
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 291.415
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9995066
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.03141073
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717031042269543646, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2062593714495891044, guid: 37d23963ee9f4b24c878835975626f8b,
-        type: 3}
-      propertyPath: m_Name
-      value: Bones
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 37d23963ee9f4b24c878835975626f8b, type: 3}
 --- !u!1 &3655000509227407213
 GameObject:
   m_ObjectHideFlags: 0
@@ -26160,6 +26512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643440149782252755, guid: 201a38adcb08f714cb8d172dd658e90a,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightingChange
       objectReference: {fileID: 0}
     - target: {fileID: 5420927239191434857, guid: 201a38adcb08f714cb8d172dd658e90a,
         type: 3}
@@ -26812,7 +27169,7 @@ GameObject:
   - component: {fileID: 5329432455491191016}
   m_Layer: 0
   m_Name: Rock (3)
-  m_TagString: Untagged
+  m_TagString: LightingChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26891,7 +27248,7 @@ GameObject:
   - component: {fileID: 4916376723130142161}
   m_Layer: 0
   m_Name: Rock (1)
-  m_TagString: Untagged
+  m_TagString: LightingChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27269,7 +27626,7 @@ GameObject:
   - component: {fileID: 7671545365433756317}
   m_Layer: 0
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: LightingChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27587,13 +27944,11 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 742274568}
   - {fileID: 2144051137}
   - {fileID: 543450651890908806}
-  - {fileID: 821191368}
-  - {fileID: 3420223238902355423}
   - {fileID: 1645024912}
   - {fileID: 1318804884}
-  - {fileID: 324135567}
   - {fileID: 410087041}
   - {fileID: 1647066805}
   - {fileID: 2563842984198955028}
@@ -27607,7 +27962,6 @@ SceneRoots:
   - {fileID: 1235792765}
   - {fileID: 1208450272}
   - {fileID: 1251113118}
-  - {fileID: 742274568}
   - {fileID: 1535558386}
   - {fileID: 160611742}
   - {fileID: 1917763032}
